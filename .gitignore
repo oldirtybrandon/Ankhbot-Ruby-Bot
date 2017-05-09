@@ -1,0 +1,5 @@
+# Ignore users OldRanks database file
+OldRanks.db
+
+# Ignore users settings file
+settings.yml

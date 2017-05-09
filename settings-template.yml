@@ -1,0 +1,33 @@
+# The name of the bot you setup in Ankhbot
+bot_name: '<your-bots-twitch-name-lowercased'
+# same oauth password that you generated from Ankhbot. If you no longer have this
+# you can generate a new one from the Ankhbot app. They need to be the same in both places
+# Ensure you copy the entire string including 'oauth:'
+bot_password: 'oauth:<the-token-you-got-from-Ankhbot-including-oauth>'
+
+# The twitch server and port to use. This really shouldn't change much
+twitch_server: 'irc.chat.twitch.tv'
+twitch_port: 6667
+
+# The channel you'd like you bot to talk to. Usually just '#<streamer_name>'
+channel: '#<channel-name>'
+
+# The directory where you have installed Ankhbot so this bot can find its sqlite files
+# Typically C:/Users/<User>/AppData/Roaming/AnkhHeart/AnkhBotR2
+ankhbot_directory: "C:/Users/<User>/AppData/Roaming/AnkhHeart/AnkhBotR2"
+
+# Settings specific to the rank announcer functionality
+announcer:
+  # Whether to use the rank announcer or not
+  use_announcer: true
+  # How often you want the announcer to run. 60 seconds has been working pretty great for me
+  announcer_timer: 60
+  # Announce when a user levels up
+  announce_level_ups: true
+  # Message to use when a user levels up. Use %{name} and %{rank} where you'd like the bot to insert these fields
+  level_up_string: "KAPOW Congrats to %{name} for LEVELING UP to %{rank} KAPOW"
+  # Announce when a user levels down
+  announce_level_downs: true
+  # Message to use when a user levels down. Use %{name} and %{rank} where you'd like the bot to insert these fields
+  level_down_string: "FailFish %{name} is slacking and leveled down to %{rank} FailFish"
+  
