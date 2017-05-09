@@ -19,7 +19,7 @@ This is a work in progress, including the documentation.
 
 ### Installation and Setup
 
-First things first, and this should probably go without saying, but make sure you have already installed and configured [Ankhbot Twitch Bot] (http://www.ankhbot.com/) Make sure you keep you copy down the twitch oauth key for your bot as you'll need that in setup later. Ankhbot doesn't actually need to be running for this to work, but the Ankhbot commands and it's data stores will not be updated if it's not rendering many of the functionality here pointless. 
+First things first, and this should probably go without saying, but make sure you have already installed and configured [Ankhbot Twitch Bot](http://www.ankhbot.com/) Make sure you keep you copy down the twitch oauth key for your bot as you'll need that in setup later. Ankhbot doesn't actually need to be running for this to work, but the Ankhbot commands and it's data stores will not be updated if it's not, rendering much of the functionality here pointless. 
 
 Clone the repository wherever you'd like to run your bot from:
 ```
