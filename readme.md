@@ -2,6 +2,7 @@
 
 A quick command line Ruby bot I made to easily add some additional functionality to the awesome [Ankhbot Twitch Bot](http://www.ankhbot.com/)
 You can check out the functionality on [Github](https://github.com/HyperNeon/Ankhbot-Ruby-Bot)
+Here's a Demo: [Ankhbot Ruby Bot Demo](https://youtu.be/rP9o5Jm4lzI)
 
 With this bot you can:
 * Send and receive messages on the command line using your Ankhbot Bot Name
