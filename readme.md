@@ -1,7 +1,7 @@
 # Ankhbot Ruby Bot
 
-A quick command line Ruby bot I made to easily add some additional functionality to the awesome [Ankhbot Twitch Bot] (http://www.ankhbot.com/)
-You can check out the functionality on [Github] (https://github.com/HyperNeon/Ankhbot-Ruby-Bot)
+A quick command line Ruby bot I made to easily add some additional functionality to the awesome [Ankhbot Twitch Bot](http://www.ankhbot.com/)
+You can check out the functionality on [Github](https://github.com/HyperNeon/Ankhbot-Ruby-Bot)
 
 With this bot you can:
 * Send and receive messages on the command line using your Ankhbot Bot Name
@@ -15,7 +15,7 @@ This is a work in progress, including the documentation.
 
 ## Instructions
 
-> This bot requires Ruby and was built with Ruby 2.4.0p0. Instructions for installing are beyond this readme, but a good starting point is: https://www.ruby-lang.org I also recommend using [RVM](http://rvm.io) for Mac/Unix and, if you're on PC with Windows 10, running RVM inside the new [Bash on Ubuntu on Windows] (https://msdn.microsoft.com/en-us/commandline/wsl/about) because it's awesome! 
+> This bot requires Ruby and was built with Ruby 2.4.0p0. Instructions for installing ruby are beyond this readme, but a good starting point is: https://www.ruby-lang.org I also recommend using [RVM](http://rvm.io) for Mac/Unix and, if you're on PC with Windows 10, running RVM inside the new [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) because it's awesome! 
 
 ### Installation and Setup
 
@@ -30,9 +30,9 @@ Navigate into the new directory and then install the necessary gems:
 ```
 bundle install
 ```
-Note: If you don't yet have bundler installed then simply install it with `gem install bundler`
+**Note:** If you don't yet have bundler installed then simply install it with `gem install bundler`
 
-Copy the settings-template.yml file to a new file called settings.yml and update it with your configuration. This is where you will configure your twitch username/password, Ankhbot install folder, as well as string formatting for commands. Yaml files are simple text files so you can edit them with any text editor like notepad or via the command line below:
+Copy the `settings-template.yml` file to a new file called `settings.yml` and update it with your configuration. This is where you will configure your twitch username/password, Ankhbot install folder, as well as string formatting for commands. Yaml files are simple text files so you can edit them with any text editor like notepad or via the command line below:
 ```
 cp settings-template.yml settings.yml
 nano settings.yml
@@ -60,7 +60,7 @@ hyperneon@HYPERNEONS-PC:~/Workspace/ankhbot-rank-announcer$ ruby ankhbot_ruby_bo
 :robotangent.tmi.twitch.tv 366 robotangent #gametangent :End of /NAMES list
 Connected... -->
 ```
-NOTE: That you won't always see the last couple lines including the Connected...--> as Twitch doesn't always seem to send this but it should still be working. 
+**NOTE:** That you won't always see the last couple lines including the `Connected...-->` as Twitch doesn't always seem to send this but it should still be working. 
 
 You can use this terminal as a normal IRC chat client if desired. Anything you type will be sent as a normal message from your bot when you hit enter. Any messages received from other users will be displayed as well. 
 
@@ -73,7 +73,7 @@ ctrl+c
 
 The Rank Announcer will monitor the Ankhbot database for any changes to the user ranks (found on the currency tab) and issue a message whenever a user levels up or levels down. It does this by keeping a copy of the users and ranks as of the last time it ran and then checking the current state against this. You can configure how often this runs as well as the text displayed and other configs in the `settings.yml` file. 
 
-NOTE: The first time it runs it'll pretty much alert for EVERYONE since they have no previous rank, so you might want to do this offstream. 
+**NOTE:** The first time it runs it'll pretty much alert for EVERYONE since they have no previous rank, so you might want to do this offstream. 
 
 If you'd like to add additional commands or processes then, currently, your best bet would be to alter the `lib/ankhbot_clint.rb`. The basic_parse method would be the best place for adding commands which respond to user input, while the `run` method is the best place for adding commands which should be run in a thread or on a timer. 
 
@@ -81,4 +81,4 @@ Ideally we'll chop this type of stuff out into helper files that can be included
 
 ### Contributing
 
-I'd love it if you'd like to help out making this thing better or if you just have some cool commands you'd like to add in. Simply fork the repo and submit a PR and I'll be glad to take a look at it. Also feel free to reach out to me with any questions and check out the [Ankhbot Discord] (https://discord.gg/J4QMG5m)
+I'd love it if you'd like to help out making this thing better or if you just have some cool commands you'd like to add in. Simply fork the repo and submit a PR and I'll be glad to take a look at it. Also feel free to reach out to me with any questions and check out the [Ankhbot Discord](https://discord.gg/J4QMG5m)
